@@ -7,7 +7,7 @@ setup(
     ext_modules=[Extension(
                             "aonlm", ["aonlm.pyx","mabonlm3d.cpp"],
                             include_dirs=get_numpy_include_dirs(), 
-                            extra_compile_args=["-msse2 -mfpmath=sse -std=c99"],
+                            #extra_compile_args=["-msse2 -mfpmath=sse -std=c99"],
                             language="c++"
                             )]
 )
